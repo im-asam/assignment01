@@ -17,7 +17,7 @@ nav {
   align-items: center;
 }
 
-ul {
+.menu ul {
   display: flex;
   list-style: none;
   gap: 24px;
@@ -149,11 +149,11 @@ ul {
 .speakers {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 100px 80px;
+  padding: 100px 60px;
 }
 
 .speaker-container {
-  margin-top: 20px;
+  margin-top: 56px;
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(2, 1fr);
@@ -168,60 +168,21 @@ ul {
 
 .speaker-info {
   padding: 20px;
-}
-
-Speaker start */
-
-.speakers {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 100px 80px;
-  font-family: "inter";
 }
 
 .speakers h2 {
-    font-family: "Inter", sans-serif;
-    font-size: 60px !important;
-    font-weight: 700;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 48px;
-}
-  
-
-.speaker-container {
-  margin-top: 20px;
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.speaker-card {
-  background: #fff;
-  border: 1px solid #E5E7EB;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.speaker-info {
-  padding: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 60px !important;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 48px;
 }
 
 .speaker-card img {
   width: 100%;
   height: 320px;
-  object-fit: contain;
-}
-
-.speakers h2 {
-  text-align: center;
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 48px;
-}
-
-.speaker-info {
-  padding: 20px;
+  object-fit: cover;
 }
 
 .field {
@@ -248,3 +209,150 @@ Speaker start */
 }
 
 /* Speaker end */
+
+/* Pricing start */
+
+.pricing {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 60px 80px;
+  font-family: "inter";
+}
+
+.section-header {
+  text-align: center;
+  justify-content: center;
+}
+
+.section-header h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #111827;
+  margin: 0;
+}
+
+.section-header p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #575757;
+  padding-top: 12px;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  height: auto;
+  margin-top: 48px;
+}
+
+.pricing-card {
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  justify-content: center;
+
+}
+
+.featured {
+  background: #111827;
+  color: #ffffff;
+}
+
+.pricing-card ul {
+  list-style: disc;
+  padding: 20px;
+  font-size: 14px;
+  font-style: normal;
+  color: #333333;
+}
+
+.featured ul {
+  color: white;
+}
+
+.pricing-card li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.pricing-card li::marker {
+    color: #60a5fa;
+}
+
+.pricing-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 48px;
+
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+
+  border-radius: 8px;
+  transition: 0.2s;
+
+  border: 1px solid #2563EB;
+  color: #2563EB;
+
+}
+
+.team {
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.featured .pricing-btn {
+  background: #2563EB;
+  color: white;
+  border: none;
+}
+
+.pricing-card h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 8px;
+}
+
+.plan {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #888888;
+}
+
+.featured .plan {
+  color: #93c5fd;
+}
+
+.per-person {
+  font-size: 14px;
+  color: #888888;
+  margin-top: 4px;
+}
+
+.pricing-card hr {
+  border: none;
+  border-top: 1px solid #ffffff;
+  margin-top: 20px;
+}
+
+.featured hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.288);
+}
+
+/* Pricing end */
